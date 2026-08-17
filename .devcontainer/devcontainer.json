@@ -1,0 +1,22 @@
+{
+    "name": "Ambiente PHP",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/var/www/html,type=bind",
+    "workspaceFolder": "/var/www/html",
+    "forwardPorts": [80],
+    "postStartCommand": "service apache2 start",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug",
+                "formulahendry.auto-close-tag"
+            ],
+            "settings": {
+                "php.suggest.basic": false
+            }
+        }
+    }
+}
