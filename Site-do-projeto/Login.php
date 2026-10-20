@@ -17,9 +17,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 //se os dados estiverem certos o login muda de false para true 
     //se der true ele vai mandar "login realizado..." em todos os outros casos vai aparecer" email ou senha incorreto"
     if ($loginCorreto) {
-        echo "Login realizado com sucesso!";
+        $mensagem = "Login realizado com sucesso!";
     } else {
-        echo "E-mail ou senha incorretos.";
+        
+        $mensagem = "E-mail ou senha incorretos.";
     }
 }
 ?>
@@ -39,6 +40,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           <h2>Senha</h2>
           <input type="password" name="password" required>
           <input type="submit" name="enter" value="Entrar">
+    <?php
+//se a mensagem for diferente de um texto vazio, mostra a mensagem no echo
+        if ($mensagem != "") {
+            echo $mensagem;
+        }
+        ?>
          </form>
       </div>
   </body>
