@@ -1,5 +1,27 @@
-<?php require_once'includes/cabecalho.php'
+<?php
+require_once'includes/cabecalho.php';
+require_once "dados.php";
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $email = $_POST["User"];
+    $senha = $_POST["password"];
+
+    $loginCorreto = false;
+//aqui procura os dados dos usuarios np dados.php
+    foreach ($usuarios as $usuario) {
+        if ($usuario["email"] == $email && $usuario["senha"] == $senha) {
+            $loginCorreto = true;
+        }
+    }
+//se os dados estiverem certos o login muda de false para true 
+    //se der true ele vai mandar "login realizado..." em todos os outros casos vai aparecer" email ou senha incorreto"
+    if ($loginCorreto) {
+        echo "Login realizado com sucesso!";
+    } else {
+        echo "E-mail ou senha incorretos.";
+    }
+}
 ?>
 <html>
 
