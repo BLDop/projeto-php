@@ -1,14 +1,24 @@
-<?php require_once'includes/cabecalho.php'?>
+<?php require_once'includes/cabecalho.php'
+
+?>
 <html>
+
+    <head>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="login.css">
+    </head>
     <body>
-    <div class="Login">
         <h1>Achados e Perdidos</h1>
-        <h2>User</h2>
-        <input type="email" name="User">
-        <h2>Senha</h2>
-        <input type="password" name="password">
-        <input type="button" name="enter" value="Entrar">
-    </div>
+              <!-- Parte do login -->
+      <div class="Login">
+         <form action="" method="post">
+          <h2>User</h2>
+          <input type="email" name="User" required>
+          <h2>Senha</h2>
+          <input type="password" name="password" required>
+          <input type="submit" name="enter" value="Entrar">
+         </form>
+      </div>
   </body>
 </html>
 
