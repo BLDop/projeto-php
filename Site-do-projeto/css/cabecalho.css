@@ -2,9 +2,12 @@
  background-color: gray;
 }
 .cabecalho a{
-    padding: 10;
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    
 }
 .Perfil{
     position: relative;
-    left: 960px;
+    left: 950px;
 }
