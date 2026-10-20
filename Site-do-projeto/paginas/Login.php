@@ -2,6 +2,7 @@
 require_once'../includes/cabecalho.php';
 require_once '../dados/dados.php';
 /**@var array $usuarios */
+$mensagem = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = $_POST["User"];
