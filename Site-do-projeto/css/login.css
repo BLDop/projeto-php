@@ -1,0 +1,28 @@
+.Login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    background-color: gray;
+    padding: 50px;
+    border-radius: 8px;
+    margin: 50px auto;
+}
+.Login input{
+  margin-bottom: 15px;
+  padding: 5px;
+  width: 250px;
+  border: 1px;
+  border-radius: 4px;
+}
+
+.Login input[type="submit"]{
+  width: 50;
+  margin:0 auto;
+  display: block;
+}
+
+h1{
+  text-align: center;
+}
+
