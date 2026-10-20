@@ -1,0 +1,13 @@
+.cabecalho{
+ background-color: gray;
+}
+.cabecalho a{
+    display: inline;
+    padding: 10px;
+    text-decoration: none;
+    
+}
+.Perfil{
+    position: relative;
+    left: 950px;
+}
