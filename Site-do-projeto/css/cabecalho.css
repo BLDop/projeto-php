@@ -1,3 +1,10 @@
 .cabecalho{
-
+ background-color: gray;
+}
+.cabecalho a{
+    padding: 10;
+}
+.Perfil{
+    position: relative;
+    left: 960px;
 }
