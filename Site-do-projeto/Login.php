@@ -1,7 +1,7 @@
 <?php
-require_once'includes/cabecalho.php';
-require_once "dados.php";
-
+require_once'../includes/cabecalho.php';
+require_once '../dados/dados.php';
+/**@var array $usuarios */
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $email = $_POST["User"];
@@ -51,4 +51,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   </body>
 </html>
 
-<?php  require_once'includes/rodape.php'?>
+<?php  require_once'../includes/rodape.php'?>
