@@ -1,5 +1,14 @@
-<?php require_once'includes/cabecalho.php'
+<?php 
+require_once'includes/cabecalho.php';
+require_once 'dados.php';
 
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
+$email = $_POST["User"];
+$senha = $_POST["password"];
+// vao procurra o usuario no array la
+// e depois ve se as informações estão certas
+}
 ?>
 <html>
 
