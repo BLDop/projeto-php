@@ -11,6 +11,7 @@
         <a href="../paginas/login.php">Login</a>
         <a href="../paginas/cadastro.php">Cadastrar-se</a>
         <a href="../paginas/perfil.php"class="Perfil">Perfil</a>
+         <a href="../paginas/cadastro-item.php">Adicionar Objetos</a>
       </nav> 
     </div>
     </header>
