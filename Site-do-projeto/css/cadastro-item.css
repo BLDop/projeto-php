@@ -1,1 +1,110 @@
 
+
+body {
+    background-color: grey;
+}
+
+.pagina-cadastro-item {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo-cadastro-item {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    margin: 20px 0 30px;
+}
+
+.caixa-cadastro-item {
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 30px;
+    box-sizing: border-box;
+}
+
+.caixa-cadastro-item h2 {
+    text-align: center;
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    margin: 0 0 25px;
+}
+
+.caixa-cadastro-item label {
+    display: block;
+    font-family: 'Courier New', monospace;
+    font-size: 19px;
+    margin-bottom: 8px;
+}
+
+.caixa-cadastro-item input,
+.caixa-cadastro-item textarea,
+.caixa-cadastro-item select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #999;
+    border-radius: 15px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.caixa-cadastro-item input {
+    height: 40px;
+}
+
+.caixa-cadastro-item textarea {
+    height: 90px;
+    resize: vertical;
+}
+
+.caixa-cadastro-item select {
+    height: 42px;
+    background-color: white;
+}
+
+.caixa-cadastro-item button {
+    display: block;
+    width: 100px;
+    height: 40px;
+    margin: 25px auto 0;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.caixa-cadastro-item button:hover {
+    background-color: #555;
+}
+
+.caixa-cadastro-item .mensagem {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+}
+
+.caixa-cadastro-item .sucesso {
+    color: green;
+}
+
+.caixa-cadastro-item .erro {
+    color: red;
+}
+
+@media (max-width: 550px) {
+    .titulo-cadastro-item {
+        font-size: 32px;
+    }
+
+    .caixa-cadastro-item {
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
