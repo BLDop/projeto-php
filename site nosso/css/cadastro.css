@@ -1,0 +1,126 @@
+
+.pagina-cadastro {
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.titulo-cadastro {
+    text-align: center;
+    font-size: 40px;
+    margin: 20px 0 30px;
+}
+
+.caixa-cadastro {
+    height: 590px;
+    width: 500px;
+    max-width: 100%;
+    margin: 0 auto 30px;
+    background-color: black;
+    border-radius: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.caixa-cadastro p,
+.caixa-cadastro label {
+    color: white;
+    font-family: 'Courier New', monospace;
+    position: absolute;
+}
+
+.caixa-cadastro .texto1 {
+    font-size: 20px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caixa-cadastro .texto2,
+.caixa-cadastro .texto3,
+.caixa-cadastro .texto4,
+.caixa-cadastro .texto5,
+.caixa-cadastro .texto6 {
+    font-size: 25px;
+    left: 32px;
+}
+
+.caixa-cadastro .texto2 { top: 25px; }
+.caixa-cadastro .texto3 { top: 115px; }
+.caixa-cadastro .texto4 { top: 200px; }
+.caixa-cadastro .texto5 { top: 285px; }
+.caixa-cadastro .texto6 { top: 365px; }
+
+.caixa-cadastro .senha1,
+.caixa-cadastro .senha2,
+.caixa-cadastro .senha3,
+.caixa-cadastro .senha4,
+.caixa-cadastro .senha5 {
+    position: absolute;
+    left: 32px;
+    width: calc(100% - 64px);
+    height: 30px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+
+.caixa-cadastro .senha1 { top: 80px; }
+.caixa-cadastro .senha2 { top: 170px; }
+.caixa-cadastro .senha3 { top: 255px; }
+.caixa-cadastro .senha4 { top: 335px; }
+.caixa-cadastro .senha5 { top: 420px; }
+
+.caixa-cadastro .botao {
+    position: absolute;
+    top: 475px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: gray;
+    color: white;
+    width: 70px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.caixa-cadastro .mensagem {
+    position: absolute;
+    top: 525px;
+    left: 10px;
+    width: calc(100% - 20px);
+    margin: 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.caixa-cadastro .mensagem.sucesso {
+    color: lightgreen;
+}
+
+.caixa-cadastro .mensagem.erro {
+    color: #ff8080;
+}
+
+@media (max-width: 550px) {
+    .caixa-cadastro {
+        border-radius: 25px;
+    }
+
+    .caixa-cadastro .texto2,
+    .caixa-cadastro .texto3,
+    .caixa-cadastro .texto4,
+    .caixa-cadastro .texto5,
+    .caixa-cadastro .texto6 {
+        left: 20px;
+        font-size: 22px;
+    }
+
+    .caixa-cadastro .senha1,
+    .caixa-cadastro .senha2,
+    .caixa-cadastro .senha3,
+    .caixa-cadastro .senha4,
+    .caixa-cadastro .senha5 {
+        left: 20px;
+        width: calc(100% - 40px);
+    }
+}

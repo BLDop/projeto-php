@@ -1,0 +1,23 @@
+.cabecalho {
+  background-color: rgb(252, 251, 251) ;
+  width: 100% ;
+ 
+}
+
+.cabecalho nav {
+  display: flex ;
+  width: 100% ;
+  box-sizing: border-box ;
+  padding: 10px 20px ;
+}
+
+.cabecalho a {
+  display: inline-block ;
+  padding: 10px ;
+  text-decoration: none ;
+  color: rgb(0, 0, 0) ; 
+}
+
+.cabecalho .Perfil {
+  margin-left: auto ;
+}
