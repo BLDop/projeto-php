@@ -93,8 +93,11 @@ if (isset($_GET["pagina"])) {
 
     <title>Meu menu de fotos</title>
 
-    <link rel="stylesheet" href="trabalho_css.css">
-
+    <link rel="stylesheet" href="pesquisa.css">
+    <link rel="stylesheet" href="../css/menu1.css">
+    <form class="form-pesquisa" action="pesquisa.php" method="get">
+    
+   
 </head>
 
 
@@ -105,7 +108,7 @@ if (isset($_GET["pagina"])) {
     <div class="perfil-aberto">
         <h1>Perfil</h1>
         <p>Esta é a área do perfil.</p>
-        <a href="trabalho_php.php">Voltar ao menu</a>
+        <a href="pesquisa.php">Voltar ao menu</a>
     </div>
 
 <?php } elseif ($pagina == "item" && isset($_GET["nome"])) { ?>
@@ -123,60 +126,53 @@ if (isset($_GET["pagina"])) {
 
         <p>Você abriu este item do menu.</p>
 
-        <a href="trabalho_php.php">Voltar ao menu</a>
+        <a href="pesquisa.php">Voltar ao menu</a>
     </div>
 
 <?php } else { ?>
 
-    <!-- Parte superior -->
-    <div class="linha-de-cima">
+    
+<!-- Parte superior -->
+<div class="linha-de-cima">
 
-        <a class="botao-perfil"
-           href="../paginas/perfil.php">
-            Perfil
-        </a>
+    <a class="botao-perfil" href="../paginas/perfil.php">
+        Perfil
+    </a>
 
-        <form action="trabalho_php.php" method="get">
+    <form class="form-pesquisa" action="pesquisa.php" method="get">
 
-            <input
-                type="text"
-                name="busca"
-                placeholder="Pesquisa..."
-                value="<?php
-                    echo htmlspecialchars(
-                        $texto,
-                        ENT_QUOTES,
-                        "UTF-8"
-                    );
-                ?>"
-            >
+        <input
+            type="text"
+            name="busca"
+            placeholder="Pesquisar objetos perdidos..."
+            value="<?php
+                echo htmlspecialchars($texto, ENT_QUOTES, "UTF-8");
+            ?>"
+        >
 
-            <button type="submit">OK</button>
-
-        </form>
-
-    </div>
-
-    <!-- resultado da pesquisa -->
-     <p class="barrade"> Barra de pesquisa: </p>
-    <div class="caixa-resultado">
+        <button type="submit">Pesquisar</button>
 
         <?php if ($texto != "") { ?>
-
-            <p class="aviso">
-                Pesquisa por:
-                <?php
-                echo htmlspecialchars(
-                    $texto,
-                    ENT_QUOTES,
-                    "UTF-8"
-                );
-                ?>
-            </p>
-
+            <a class="limpar-pesquisa" href="pesquisa.php">
+                Limpar
+            </a>
         <?php } ?>
 
+    </form>
+
+</div>
+
+<!-- Resultado da pesquisa -->
+<?php if ($texto != "") { ?>
+    <div class="caixa-resultado">
+        <p class="aviso">
+            Resultados para:
+            <strong>
+                <?php echo htmlspecialchars($texto, ENT_QUOTES, "UTF-8"); ?>
+            </strong>
+        </p>
     </div>
+<?php } ?>
 
     <!-- area inferior -->
     <div class="area-de-baixo">
@@ -199,7 +195,7 @@ if (isset($_GET["pagina"])) {
                     
                     <a
                         class="quadrado"
-                        href="trabalho_php.php?pagina=item&amp;nome=<?php
+                        href="pesquisa.php?pagina=item&amp;nome=<?php
                             echo urlencode($item["nome"]);
                         ?>"
                     >
@@ -243,7 +239,7 @@ if (isset($_GET["pagina"])) {
 
             <a
                 class="quadrado"
-                href="trabalho_php.php?pagina=item&amp;nome=<?php echo urlencode($item["nome"]); ?>"
+                href="pesquisa.php?pagina=item&amp;nome=<?php echo urlencode($item["nome"]); ?>"
             >
 
                 <img
