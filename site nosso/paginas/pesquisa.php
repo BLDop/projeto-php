@@ -82,7 +82,7 @@ $linkPerfil = "perfil.php";
     <title>Achados e Perdidos</title>
 
     <link rel="stylesheet" href="../css/menu1.css">
-    <link rel="stylesheet" href="../css/pesquisa.css">
+    <link rel="stylesheet" href="pesquisa.css">
 </head>
 
 <body>
