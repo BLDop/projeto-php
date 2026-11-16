@@ -1,0 +1,97 @@
+
+/* Parte superior */
+.linha-de-cima {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 30px;
+}
+
+/* Formulário de pesquisa */
+.form-pesquisa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    max-width: 650px;
+    margin-left: auto;
+}
+
+/* Campo de texto */
+.form-pesquisa input {
+    flex: 1;
+    min-width: 0;
+    height: 44px;
+    padding: 0 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Destaque ao clicar no campo */
+.form-pesquisa input:focus {
+    border-color: #555;
+    box-shadow: 0 0 4px #aaa;
+}
+
+/* Botão pesquisar */
+.form-pesquisa button {
+    height: 44px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.form-pesquisa button:hover {
+    background-color: #555;
+}
+
+/* Botão limpar */
+.limpar-pesquisa {
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.limpar-pesquisa:hover {
+    text-decoration: underline;
+}
+
+/* Resultado */
+.caixa-resultado {
+    padding: 0 30px;
+}
+
+.aviso {
+    font-size: 15px;
+}
+
+/* Ajuste para celulares */
+@media (max-width: 600px) {
+    .linha-de-cima {
+        align-items: stretch;
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .form-pesquisa {
+        width: 100%;
+        max-width: none;
+        flex-wrap: wrap;
+    }
+
+    .form-pesquisa input {
+        width: 100%;
+    }
+
+    .caixa-resultado {
+        padding: 0 15px;
+    }
+}
